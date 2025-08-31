@@ -1,0 +1,13 @@
+.vscode/**
+**/*.map
+**/*.ts
+node_modules/.bin/**
+.git/**
+.github/**
+test/**
+tests/**
+scripts/**
+coverage/**
+.nyc_output/**
+**/*.vsix
+*.vsix

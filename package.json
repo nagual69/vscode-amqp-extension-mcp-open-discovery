@@ -1,0 +1,139 @@
+{
+  "name": "vscode-mcp-open-discovery-amqp-bridge",
+  "displayName": "MCP Open Discovery AMQP Bridge",
+  "description": "Bridge for connecting VS Code to AMQP-based MCP Open Discovery servers",
+  "version": "1.0.0",
+  "publisher": "",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "AI",
+    "Other"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp-open-discovery",
+    "open-discovery",
+    "amqp",
+    "model-context-protocol",
+    "bridge",
+    "transport"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nagual69/AMQPConnectorforMCP.git"
+  },
+  "homepage": "https://github.com/nagual69/AMQPConnectorforMCP",
+  "bugs": {
+    "url": "https://github.com/nagual69/AMQPConnectorforMCP/issues"
+  },
+  "author": {
+    "name": "VibeForge",
+    "url": "https://github.com/nagual69"
+  },
+  "icon": "mcp-open-discovery-logo-white.png",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "mcpServerDefinitionProviders": [
+      {
+        "id": "amqpMcpProvider",
+        "label": "MCP Open Discovery AMQP Server Provider"
+      }
+    ],
+    "configuration": {
+      "title": "MCP Open Discovery AMQP Bridge",
+      "properties": {
+        "amqpMcpBridge.servers": {
+          "type": "array",
+          "description": "AMQP MCP servers configuration",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Unique identifier for the server"
+              },
+              "name": {
+                "type": "string",
+                "description": "Display name for the server"
+              },
+              "amqpUrl": {
+                "type": "string",
+                "description": "AMQP broker URL (e.g., amqp://localhost:5672)"
+              },
+              "serverQueuePrefix": {
+                "type": "string",
+                "description": "Queue prefix for the target MCP server"
+              },
+              "exchangeName": {
+                "type": "string",
+                "description": "Exchange name for notifications"
+              },
+              "enabled": {
+                "type": "boolean",
+                "description": "Whether this server is enabled",
+                "default": true
+              }
+            },
+            "required": ["id", "name", "amqpUrl", "serverQueuePrefix", "exchangeName"]
+          },
+          "default": [
+            {
+              "id": "openMcpDiscovery",
+              "name": "OpenMCP Discovery Server",
+              "amqpUrl": "amqp://mcp:discovery@localhost:5672",
+              "serverQueuePrefix": "mcp.discovery",
+              "exchangeName": "mcp.notifications",
+              "enabled": true
+            }
+          ]
+        },
+        "amqpMcpBridge.defaultTimeout": {
+          "type": "number",
+          "description": "Default timeout for AMQP requests in milliseconds",
+          "default": 30000
+        },
+        "amqpMcpBridge.reconnectDelay": {
+          "type": "number",
+          "description": "Delay between reconnection attempts in milliseconds",
+          "default": 5000
+        },
+        "amqpMcpBridge.maxReconnectAttempts": {
+          "type": "number",
+          "description": "Maximum number of reconnection attempts",
+          "default": 10
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "amqpMcpBridge.refreshServers",
+        "title": "Refresh AMQP MCP Servers",
+        "category": "AMQP MCP"
+      },
+      {
+        "command": "amqpMcpBridge.testConnection",
+        "title": "Test AMQP Connection",
+        "category": "AMQP MCP"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+  "compile": "tsc -p ./ && node -e \"require('fs').copyFileSync('src/bridge.js','dist/bridge.js')\"",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  }
+}
