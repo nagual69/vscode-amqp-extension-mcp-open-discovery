@@ -1,14 +1,34 @@
-# VS Code AMQP MCP Bridge ![CI](https://github.com/nagual69/AMQPConnectorforMCP/actions/workflows/ci.yml/badge.svg)
+<!-- BEGIN UNIFIED BRAND HEADER (copy/paste to other repos) -->
+<div align="center">
+  <p>
+    <h1>VS Code AMQP MCP Bridge</h1>
+  </p>
+  <p>
+    <img src="./mcp-open-discovery-logo-white.png" alt="MCP Open Discovery" width="128" height="128" />
+    <img src="./VibeForge01.png" alt="VibeForge Systems" width="128" height="128" />
+    <img src="./CodedwithAI-white-transparent.png" alt="Coded with AI" width="128" height="128" />
+  </p>
 
-<p align="center">
-  <img src="./mcp-open-discovery-logo-white.png" alt="MCP Open Discovery" width="128" height="128" />
-  <img src="./VibeForge01.png" alt="VibeForge" width="128" height="128" />
-  <img src="./CodedwithAI-white-transparent.png" alt="Coded with AI" width="128" height="128" />
-  
-</p>
+  <p><em>Forging Intelligent Systems with Purpose</em></p>
+  <p><strong>Unified launch: MCP Open Discovery • AMQP Transport • VS Code Bridge</strong></p>
+  <p>
+    <a href="https://modelcontextprotocol.io/" target="_blank">Model Context Protocol</a>
+    ·
+    <a href="https://github.com/nagual69/mcp-open-discovery" target="_blank">MCP Open Discovery</a>
+    ·
+    <a href="https://github.com/nagual69/AMQPConnectorforMCP" target="_blank">AMQP Transport</a>
+    ·
+    <a href="https://github.com/nagual69/vscode-mcp-open-discovery-amqp-bridge" target="_blank">VS Code AMQP Bridge</a>
+    ·
+    <a href="https://vibeforgesystems.com/" target="_blank">VibeForge Systems</a>
+  </p>
+
+</div>
+<!-- END UNIFIED BRAND HEADER -->
 <p align="center">
   <em>Connect VS Code's MCP client to AMQP-based MCP Open Discovery servers</em><br/>
-  <strong>by VibeForge</strong>
+  <strong>by VibeForge Systems</strong>
+  
 </p>
 
 A professional VS Code extension that bridges VS Code's built-in MCP client to AMQP-based MCP Open Discovery servers, so you can develop and test your OpenMCP Discovery server directly from VS Code Chat.
@@ -29,6 +49,7 @@ A professional VS Code extension that bridges VS Code's built-in MCP client to A
   - [Code of Conduct](./CODE_OF_CONDUCT.md)
   - [Security Policy](./SECURITY.md)
   - [Changelog](./CHANGELOG.md)
+- [Maintainer & Contact](#maintainer--contact)
 - [Examples](#examples)
 - [License](#license)
 
@@ -359,6 +380,13 @@ npm run test-connection
 - Code of Conduct: [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)
 - Security Policy: [SECURITY.md](./SECURITY.md)
 - Changelog: [CHANGELOG.md](./CHANGELOG.md)
+
+## Maintainer & Contact
+
+Maintained by VibeForge Systems.
+
+- Website: https://vibeforgesystems.com/
+- Contact: https://vibeforgesystems.com/#contact
 
 ## Examples
 

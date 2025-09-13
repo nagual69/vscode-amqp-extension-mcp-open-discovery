@@ -3,7 +3,7 @@
   "displayName": "MCP Open Discovery AMQP Bridge",
   "description": "Bridge for connecting VS Code to AMQP-based MCP Open Discovery servers",
   "version": "1.0.0",
-  "publisher": "",
+  "publisher": "vibeforgesystems",
   "license": "MIT",
   "engines": {
     "vscode": "^1.95.0"
@@ -25,13 +25,13 @@
     "type": "git",
     "url": "https://github.com/nagual69/AMQPConnectorforMCP.git"
   },
-  "homepage": "https://github.com/nagual69/AMQPConnectorforMCP",
+  "homepage": "https://vibeforgesystems.com/",
   "bugs": {
     "url": "https://github.com/nagual69/AMQPConnectorforMCP/issues"
   },
   "author": {
-    "name": "VibeForge",
-    "url": "https://github.com/nagual69"
+    "name": "VibeForge Systems",
+    "url": "https://vibeforgesystems.com/"
   },
   "icon": "mcp-open-discovery-logo-white.png",
   "activationEvents": [
