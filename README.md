@@ -97,7 +97,7 @@ npm run compile
 3. Or install from a packaged VSIX
 
 ```powershell
-code --install-extension .\vscode-mcp-open-discovery-amqp-bridge-1.0.0.vsix --force
+code --install-extension .\vscode-mcp-open-discovery-amqp-bridge-1.0.1.vsix --force
 ```
 
 4. Add a server in VS Code Settings (Ctrl+,)
@@ -160,7 +160,7 @@ npm run compile
 From a packaged VSIX:
 
 ```powershell
-code --install-extension .\vscode-mcp-open-discovery-amqp-bridge-1.0.0.vsix --force
+code --install-extension .\vscode-mcp-open-discovery-amqp-bridge-1.0.1.vsix --force
 ```
 
 Note: Packaged `.vsix` artifacts should be distributed via GitHub Releases and not committed to source control.

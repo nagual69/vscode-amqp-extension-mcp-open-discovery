@@ -2,7 +2,7 @@
   "name": "vscode-mcp-open-discovery-amqp-bridge",
   "displayName": "MCP Open Discovery AMQP Bridge",
   "description": "Bridge for connecting VS Code to AMQP-based MCP Open Discovery servers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "vibeforgesystems",
   "license": "MIT",
   "engines": {
