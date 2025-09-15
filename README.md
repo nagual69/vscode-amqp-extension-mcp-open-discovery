@@ -5,7 +5,6 @@
   </p>
   <p>
     <img src="./mcp-open-discovery-logo-white.png" alt="MCP Open Discovery" width="128" height="128" />
-    <img src="./VibeForge01.png" alt="VibeForge Systems" width="128" height="128" />
     <img src="./CodedwithAI-white-transparent.png" alt="Coded with AI" width="128" height="128" />
   </p>
 
@@ -20,15 +19,13 @@
     ·
     <a href="https://github.com/nagual69/vscode-mcp-open-discovery-amqp-bridge" target="_blank">VS Code AMQP Bridge</a>
     ·
-    <a href="https://vibeforgesystems.com/" target="_blank">VibeForge Systems</a>
+    <a href="https://www.linkedin.com/in/toby-schmeling-2200556/" target="_blank">LinkedIn Profile</a>
   </p>
 
 </div>
 <!-- END UNIFIED BRAND HEADER -->
 <p align="center">
-  <em>Connect VS Code's MCP client to AMQP-based MCP Open Discovery servers</em><br/>
-  <strong>by VibeForge Systems</strong>
-  
+  <em>Connect VS Code's MCP client to AMQP-based MCP Open Discovery servers</em><br/>  
 </p>
 
 A professional VS Code extension that bridges VS Code's built-in MCP client to AMQP-based MCP Open Discovery servers, so you can develop and test your OpenMCP Discovery server directly from VS Code Chat.
