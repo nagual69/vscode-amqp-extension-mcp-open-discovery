@@ -410,7 +410,7 @@ Once connected, you can test in VS Code Chat:
 
 ## License
 
-Licensed under the Apache License, Version 2.0 — see `LICENSE` for details.
+Licensed under the Apache License, Version 2.0 — see `LICENSE` and `NOTICE` for details.
 
 ## Related
 
