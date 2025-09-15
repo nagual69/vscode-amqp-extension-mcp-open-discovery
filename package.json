@@ -4,7 +4,7 @@
   "description": "Bridge for connecting VS Code to AMQP-based MCP Open Discovery servers",
   "version": "1.0.1",
   "publisher": "vibeforgesystems",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "engines": {
     "vscode": "^1.95.0"
   },
